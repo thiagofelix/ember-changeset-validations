@@ -1,11 +1,11 @@
 /* globals requirejs, requireModule */
-import { A as emberArray } from '@ember/array';
+import Ember from 'ember';
 
-import { isPresent } from '@ember/utils';
 import config from 'ember-get-config';
 import defaultMessages from 'ember-changeset-validations/utils/messages';
 import withDefaults from 'ember-changeset-validations/utils/with-defaults';
 
+const { A: emberArray, isPresent } = Ember;
 const { keys } = Object;
 const moduleName = `${config.modulePrefix}/validations/messages`;
 
